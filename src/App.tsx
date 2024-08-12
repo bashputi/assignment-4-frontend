@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-   {/* <div className="relative">
+   <div className="relative">
   <div className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-200 to-blue-200">
     <h2 className="text-4xl font-bold">The First slide</h2>
     <p className="mt-2">Scroll Down for next slide</p>
@@ -20,7 +20,7 @@ function App() {
   <div className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
     <h2 className="text-4xl font-bold">The Fourth slide</h2>
   </div>
-</div> */}
+</div>
 
     </>
   )

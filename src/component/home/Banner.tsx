@@ -2,8 +2,7 @@
 
 export default function Banner() {
   return (
-<div className="">
-  <div className="bg-[#D7CFA1] flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around">
+  <div className="bg-[#D7CFA1]  flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around">
     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
     <h1 className="text-3xl font-bold leading-none lg:text-6xl">Explore the
         <span className=""> Wilderness</span> with Confidence
@@ -17,13 +16,13 @@ export default function Banner() {
     className="px-6 py-2 min-w-[120px] text-center text-white bg-[#003856] border border-[#003856] rounded active:text-[#003856] hover:bg-transparent hover:text-[#003856] "
     href="/download"
   >
-    Download
+    Products
   </a>
   <a
 className="px-6 py-2 min-w-[120px] text-center text-[#003856] border border-[#003856] rounded hover:bg-[#003856] hover:text-white active:bg-[#003856] "
     href="/download"
   >
-    view
+    purchase
   </a>
 </div>
       </div>
@@ -32,8 +31,5 @@ className="px-6 py-2 min-w-[120px] text-center text-[#003856] border border-[#00
       <img src="../../../public/assets/banner.png" alt="" className="object-cover w-full h-full" />
     </div>
   </div>
-</div>
-
-
   )
 }
