@@ -85,7 +85,7 @@ return (
                 className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
                 aria-current="page"
               >
-                About
+                About US
               </NavLink>
             </li>
             <li>
@@ -94,7 +94,16 @@ return (
                 className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
                 aria-current="page"
               >
-                Products
+                All Products
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/products"
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                aria-current="page"
+              >
+                Manage Product
               </NavLink>
             </li>
             <li className="mt-1 mb-2 md:mb-0">
