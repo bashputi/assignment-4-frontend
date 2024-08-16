@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Category = () => {
     return (
-        <div className="">
+        <div className="pb-8 md:pb-20">
             
-            <h1 className="pl-2 md:pl-8 text-xl md:text-3xl font-bold text-center mt-[10vh]">Shop By Category</h1>
+            <h1 className=" text-xl md:text-3xl font-bold text-center mt-[10vh]">Shop By Category</h1>
           
 
             <div className="mt-8 md:mt-12 lg:mt-16">

@@ -12,24 +12,26 @@ export default function Home() {
     <div className="mx-auto container">
    <Banner />
    <div className="relative">
-   <div className="sticky top-0 h-screen flex flex-col bg-[#6c7355] text-white">
+   <div className="sticky top-0 flex flex-col bg-[#6c7355] text-white">
   <Category />
   </div>
-  <div className="sticky top-0 h-screen flex flex-col bg-[#849E8A] ">
+  <div className="sticky top-0  flex flex-col bg-[#849E8A] ">
   <Recomended />
   </div>
-  <div className="sticky top-0 h-screen flex flex-col bg-[#c1c9cd]">
-  <Feature />
-  </div>
-  <div className="sticky top-0 h-screen flex flex-col bg-[#989e8f]">
-  <Testimonial />
-  </div>
-  <div className="sticky top-0 h-screen flex flex-col bg-[#D9C5BC] ">
-  <Other />
-  </div>
+ 
 </div>
 
+
+  <div className="bg-[#c1c9cd]">
+  <Feature />
+  </div>
   
+  <div className=" flex flex-col bg-[#989e8f]">
+  <Testimonial />
+  </div>
+  <div className="  flex flex-col bg-[#D9C5BC] ">
+  <Other />
+  </div>
    
    
 
