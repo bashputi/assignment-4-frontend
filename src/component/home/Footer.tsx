@@ -25,7 +25,7 @@ const Footer = () => {
         </p>
         <Link
           to="/about"
-          className="px-6 py-2 min-w-[120px] text-center text-white bg-[#003856] border border-[#003856] rounded"
+          className="px-6 py-2 min-w-[120px] text-center text-white bg-[#003856] hover:bg-[#02588a] border border-[#003856] rounded"
         >
           Contact us
         </Link>
@@ -125,7 +125,7 @@ const Footer = () => {
           Subscribe to get the latest news from us
         </p>
         <button
-          className="flex items-center justify-center gap-2 bg-[#003856] rounded-full py-3 px-6 w-fit lg:mx-0  text-sm  font-semibold "
+          className="flex items-center justify-center gap-2 bg-[#003856] hover:bg-[#02588a] rounded-full py-3 px-6 w-fit lg:mx-0  text-sm  font-semibold "
         >
           Subscribe
           <FaArrowRightLong />

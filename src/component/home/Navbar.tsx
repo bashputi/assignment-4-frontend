@@ -99,7 +99,7 @@ return (
             </li>
             <li>
               <NavLink
-                to="/products"
+                to="/product_manage"
                 className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
                 aria-current="page"
               >

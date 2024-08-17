@@ -54,6 +54,8 @@ const Products = () => {
                 </div>
                 </div>
 
+                {/* clear button  */}
+                    <button className="p-2 px-6 bg-[#003856] mt-6 text-white rounded-md hover:bg-[#02588a]">Clear All</button>
                 </div>
                 
     
