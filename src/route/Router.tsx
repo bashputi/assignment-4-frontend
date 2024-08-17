@@ -4,6 +4,7 @@ import NotFound from '../layout/NotFound.tsx'
 import Home from '../layout/home/Home.tsx'
 import About from "../layout/pages/About.tsx";
 import Products from "../layout/pages/Products.tsx";
+import ProductDetails from "../layout/pages/ProductDetails.tsx";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
           element: <Products />,
         },
         {
+          path: "/products/id",
+          element: <ProductDetails />,
+        },
+        {
           path: "/carts",
           element: <Products />,
         },
@@ -32,6 +37,7 @@ const router = createBrowserRouter([
           path: "/wishlist",
           element: <Products />,
         },
+      
       ]
     },
   ]);
