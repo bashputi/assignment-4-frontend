@@ -13,14 +13,14 @@ type TFormInput = {
 };
 
 const CreateProduct = () => {
-    const [ createProducts ] = useCreateProductsMutation();
+    // const [ createProducts, { isLoading, isError } ] = useCreateProductsMutation();
     const { register, handleSubmit } = useForm<TFormInput>();
 
     const onSubmit: SubmitHandler<TFormInput>  = async(data) => {
        
 console.log(data)
-        const res = await createProducts(data);
-        console.log(res)
+        // const res = await createProducts(data);
+        // console.log(res)
     }
 
     return (

@@ -4,7 +4,7 @@ const productsApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAllProducts: builder.query({
             query: () => ({
-                url: '/products',
+                url: 'products',
                 method: "GET",
             }),
             providesTags: ["Products"],
@@ -12,7 +12,7 @@ const productsApi = baseApi.injectEndpoints({
         createProducts: builder.mutation({
             query: (data) => {
                 return {
-                    url: "products/create-products",
+                    url: "create-products",
                     method: "POST",
                     body: data,
                 };
