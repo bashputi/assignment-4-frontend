@@ -8,6 +8,8 @@ import ProductDetails from "../layout/pages/ProductDetails.tsx";
 import Carts from "../layout/pages/Carts.tsx";
 import Wishlist from "../layout/pages/Wishlist.tsx";
 import ProductManage from "../layout/pages/ProductManage.tsx";
+import CreateProduct from "../layout/pages/CreateProduct.tsx";
+import EditProduct from "../layout/pages/EditProduct.tsx";
 
 
 const router = createBrowserRouter([
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/create-product",
+          element: <CreateProduct />,
+        },
+        {
+          path: "/edit-product",
+          element: <EditProduct />,
         },
         {
           path: "/products/id",

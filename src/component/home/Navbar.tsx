@@ -17,7 +17,7 @@ return (
       <div className="flex flex-wrap items-center justify-between px-4 mx-auto">
         <Link to="/" className="flex items-center">
           <img
-            src="../../../public/assets/logo.png"
+            src="/assets/logo.png"
             className="h-6 pl-6 pr-3 sm:h-9"
             alt="Trail Hunter Logo"
           />

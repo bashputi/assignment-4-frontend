@@ -1,8 +1,21 @@
+import { Link } from "react-router-dom";
 
 
 const ProductManage = () => {
+
     return (
-        <div>
+        <div className="flex mt-5 gap-5">
+          {/* create product button  */}
+          <div>
+          <Link
+          to="/create-product">
+          <button className="px-6 py-2 min-w-[120px] text-center text-white bg-[#003856] hover:bg-[#02588a] border border-[#003856] rounded"
+        >
+          Create Product
+          </button>
+        </Link>
+          </div>
+
             {/* all added products  */}
             <div>
             <table className="min-w-full divide-y divide-gray-200">

@@ -28,7 +28,7 @@ className="px-6 py-2 min-w-[120px] text-center text-[#003856] border border-[#00
       </div>
     </div>
     <div className="flex-1 p-6 mt-8 lg:mt-0 lg:h-auto lg:max-w-2xl">
-      <img src="../../../public/assets/banner.png" alt="" className="object-cover w-full h-full" />
+      <img src="/assets/banner.png" alt="" className="object-cover w-full h-full" />
     </div>
   </div>
   )

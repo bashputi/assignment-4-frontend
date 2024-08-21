@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
       <Link to="/" className="flex items-center">
           <img
-            src="../../../public/assets/logo.png"
+            src="/assets/logo.png"
             className=" w-28 h-28 pr-3 sm:h-9"
             alt="Trail Hunter Logo"
           />
