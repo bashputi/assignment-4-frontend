@@ -1,13 +1,9 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 
-const baseQuery = fetchBaseQuery({
-    baseUrl: "http://localhost:5000/",
-});
-
+// Define a service using a base URL and expected endpoints
 export const baseApi = createApi({
-    reducerPath: "baseApi",
-    tagTypes: ["Products"],
-    baseQuery: baseQuery,
-    endpoints: () => ({}),
-});
+  reducerPath: 'baseApi',
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/' }),
+  endpoints: () => ({}),
+})

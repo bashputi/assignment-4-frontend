@@ -9,7 +9,6 @@ import router from "./route/Router.js";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
-    {/* <Toaster position="top-center" />  */}
     <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>,

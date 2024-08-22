@@ -1,29 +1,31 @@
 import { baseApi } from "../Api/baseApi";
 
-const productsApi = baseApi.injectEndpoints({
+export const productsApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAllProducts: builder.query({
             query: () => ({
-                url: 'products',
+                url: 'api/product',
                 method: "GET",
             }),
-            providesTags: ["Products"],
+            // providesTags: ["Products"],
         }),
         createProducts: builder.mutation({
             query: (data) => {
                 return {
-                    url: "create-products",
+                    url: "/api/create-products",
                     method: "POST",
                     body: data,
                 };
             },
-            invalidatesTags: ["Products"],
+            // invalidatesTags: ["Products"],
         }),
     }),
 });
 
 export const {
-     useGetAllProductsQuery, 
-     useCreateProductsMutation 
+ useCreateProductsMutation,
+ useGetAllProductsQuery
     
     } = productsApi;
+
+

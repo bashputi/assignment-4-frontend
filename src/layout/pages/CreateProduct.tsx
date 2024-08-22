@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useCreateProductsMutation } from "../../Redux/features/productsApi";
 
@@ -13,14 +15,31 @@ type TFormInput = {
 };
 
 const CreateProduct = () => {
-    // const [ createProducts, { isLoading, isError } ] = useCreateProductsMutation();
-    const { register, handleSubmit } = useForm<TFormInput>();
+    const [ createProducts, { isLoading } ] = useCreateProductsMutation();
+    const { register, handleSubmit, reset } = useForm<TFormInput>();
 
     const onSubmit: SubmitHandler<TFormInput>  = async(data) => {
        
-console.log(data)
-        // const res = await createProducts(data);
-        // console.log(res)
+        const res = await createProducts(data);
+      
+        if (res.data.success) {
+          toast(res.data.message, {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+            reset()
+        }else{
+          toast(res.data.message, {
+            position: "top-right",
+            autoClose: 3000
+            });
+        }
     }
 
     return (
@@ -149,12 +168,14 @@ console.log(data)
         className="text-white font-semibold bg-[#003856] hover:bg-[#02588a] border border-[#003856] py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         type="submit"
       >
-        Create
+        {
+          isLoading ? <span>Creating...</span> : <span>Create</span>
+        }
       </button>
     </div>
   </form>
 </div>
-
+<ToastContainer />
         </div>
     );
 };

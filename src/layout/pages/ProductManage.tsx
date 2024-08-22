@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import { useGetAllProductsQuery } from "../../Redux/features/productsApi";
 
 
 const ProductManage = () => {
+  const { data, isLoading } = useGetAllProductsQuery(undefined);
+
+  console.log(data)
 
     return (
         <div className="flex mt-5 gap-5">
