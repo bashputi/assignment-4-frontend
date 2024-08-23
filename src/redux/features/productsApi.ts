@@ -3,11 +3,11 @@ import { baseApi } from "../Api/baseApi";
 export const productsApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAllProducts: builder.query({
-            query: ({ page, limit }) => ({
-                url: `api/product?page=${page}&limit=${limit}`,
+            query: () => ({
+                url: "api/product",
                 method: "GET",
             }),
-            // providesTags: ["Products"],
+            providesTags: ["Products"],
         }),
         createProducts: builder.mutation({
             query: (data) => {
@@ -17,7 +17,7 @@ export const productsApi = baseApi.injectEndpoints({
                     body: data,
                 };
             },
-            // invalidatesTags: ["Products"],
+            invalidatesTags: ["Products"],
         }),
     }),
 });

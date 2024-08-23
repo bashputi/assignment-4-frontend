@@ -1,5 +1,5 @@
-import { RootState } from "@/Redux/store";
-import { createSlice, typePayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '../store';
+import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { ProductsState } from "../../types/types";
 
@@ -23,7 +23,7 @@ const productsSlice = createSlice({
     initialState,
     reducers: {
         setProducts(state, action) {
-            state.searchQuery = action.payload;
+            state.products = action.payload;
         },
         setSearchQuery(state, action) {
             state.searchQuery = action.payload;
@@ -72,8 +72,6 @@ const productsSlice = createSlice({
     },
 });
 
-
-
 export const {
     setProducts,
     deleteProduct,
@@ -90,7 +88,7 @@ export const {
 } = productsSlice.actions;
 
 export const selectCount = (state: RootState) => state.products.value;
-export const selectProducts = (state: RootState) => state.products.products;
+export const selectProducts = (state: RootState) => state.products;
 export const selectSearchQuery = (state: RootState) => state.products.searchQuery;
 export const singleProductFormState = (state: RootState) => state.products.singleProduct;
 export const selectfilters = (state: RootState) => state.products;
