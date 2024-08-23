@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useGetAllProductsQuery } from "../../Redux/features/productsApi";
 import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -13,8 +12,7 @@ import { deleteProduct, selectProducts } from "../../Redux/features/ProductSlice
 const ProductManage = () => {
   const Item = useAppSelector(selectProducts);
   const cartProduct = Item.products || [];
-  
-  const [update, setUpdate] = useState(String);
+
   const dispatch = useAppDispatch();
 
   const [page, setPage] = useState(1);
@@ -100,9 +98,11 @@ const ProductManage = () => {
         <td className="px-6 py-4 whitespace-nowrap">{product?.price}</td>
         <td className="px-6 py-4 whitespace-nowrap">{product?.category}</td>
         <td className="px-6 py-4 whitespace-nowrap">
-          <button className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out">
+        <Link to={`/edit-product/${product?._id}`}>
+        <button className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out">
             Edit
           </button>
+        </Link>
           </td>
         <td className="px-6 py-4 whitespace-nowrap">
         <button onClick={() => handleDelete(product._id)} className="ml-2 px-4 py-2 font-medium text-white bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:shadow-outline-red active:bg-red-600 transition duration-150 ease-in-out">
