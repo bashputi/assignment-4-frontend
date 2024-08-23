@@ -1,9 +1,8 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useCreateProductsMutation } from "../../Redux/features/productsApi";
 import { useAppDispatch, useAppSelector } from '../../Redux/hooks';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { getSingleProduct, singleProductFormState, updateProductIntoState } from '../../Redux/features/ProductSlice';
 import { useParams } from 'react-router-dom';
 import { TProductProps } from '../../types/types';
@@ -21,17 +20,14 @@ type TFormInput = {
 
 const EditProduct = () => {
     const { id } = useParams();
-    console.log("params", id)
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        console.log("useeffect", id)
         dispatch(getSingleProduct(id)
     )
     }, [dispatch, id]);
 
     const product = useAppSelector(singleProductFormState) as TProductProps;
-    console.log("product", product)
 
 
     const { register, handleSubmit, reset } = useForm<TFormInput>();

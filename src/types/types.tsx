@@ -6,6 +6,7 @@ export type TCardIncrement = {
 type SortType = "low-to-high" | "high-to-low" | null;
 
 export type ProductsState = {
+    [x: string]: any;
     products: TProductProps[];
     searchQuery: string;
     value: number;
