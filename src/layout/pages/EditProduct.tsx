@@ -45,7 +45,7 @@ const EditProduct = () => {
             progress: undefined,
             theme: "light",
             });
-            reset()
+           
         
     }
 

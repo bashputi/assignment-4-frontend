@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
-import { IoBookmarksSharp } from "react-icons/io5";
+
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+   const [isOpen, setIsOpen] = useState(false);
 
 const toggleMenu = () => {
   setIsOpen(!isOpen);
-};
+}
 
 return (
 <div className="">
@@ -115,15 +115,7 @@ return (
                 <FaShoppingCart />
               </NavLink>
             </li>
-            <li className="mt-1">
-              <NavLink
-                to="/wishlist"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
-                aria-current="page"
-              >
-                <IoBookmarksSharp />
-              </NavLink>
-            </li>
+       
           </ul>
         </div>
       </div>

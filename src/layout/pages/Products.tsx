@@ -9,7 +9,7 @@ const Products = () => {
     const dispatch = useAppDispatch();
     const products = useAppSelector(selectProducts);
     const filters = useAppSelector(selectfilters);
-console.log(products)
+
     const searchProductQuery = useAppSelector(selectSearchQuery);
     
     const handleInputSearchQuery = (event: ChangeEvent<HTMLInputElement>) => {
@@ -28,11 +28,10 @@ console.log(products)
         }
       };
 
-      const searchProduct = products.products
+ const searchProduct = products.products
     ?.filter((product: TProductProps) =>
-      product.title
-        .toLocaleLowerCase()
-        .includes(searchProductQuery.toLocaleLowerCase())
+      product.title.toLocaleLowerCase().includes(searchProductQuery.toLocaleLowerCase()) || 
+    product.description.toLocaleLowerCase().includes(searchProductQuery.toLocaleLowerCase())
     )
     .filter(
       (product: TProductProps) =>
@@ -54,9 +53,9 @@ console.log(products)
             {/* heading  */}
             <h1 className="text-center py-8 md:py-12 lg:py-16 text-2xl md:text-4xl font-semibold ">Feature Products</h1>
 
-     <div className="md:flex gap-2 lg:gap-4 lg:px-0">
+     <div className="">
            {/* filter section  */}
-              <div>
+              <div className="flex justify-between">
                 {/* search box  */}
                    <div>
                     <p className="mb-3  font-semibold">Search by name or description</p>
@@ -69,23 +68,7 @@ console.log(products)
                         />
                     </div>
                    </div>
-                {/* filter by category*/}
-                <div className="w-40 mt-5 md:mt-8 font-semibold">
-                    <p>Filter by Category</p>
-                <div className="flex items-center space-x-2 rounded p-2 hover:bg-gray-100 accent-teal-600">
-                    <input
-                    type="checkbox"
-                    id="htmlCheckbox"
-                    name="languageCheckbox"
-                    className="h-4 w-4 rounded border-gray-300 text-teal-600 shadow-sm focus:border-teal-300 focus:ring focus:ring-teal-200 focus:ring-opacity-50 focus:ring-offset-0 disabled:cursor-not-allowed disabled:text-gray-400"
-                    />
-                    <label htmlFor="htmlCheckbox" className="flex w-full space-x-2 text-sm">
-                    
-                    HTML
-                    </label>
-                </div>
-                </div>
-             
+            
                 {/* sorting*/}
                 <div className="w-40 mt-5 md:mt-8 font-semibold">
                 <select onChange={handleSortChange} className="block  w-sm text-sm font-medium transition duration-75 border border-bg-[#003856a] rounded-lg shadow-sm h-9 focus:border-blue-600 focus:ring-1 focus:ring-inset focus:ring-blue-600 bg-none" >
@@ -98,7 +81,6 @@ console.log(products)
             
                 </div>
                 
-    
                 {/* card section  */}
                 <div className="pt-4 md:pt-8 max-w-screen-xl mx-auto">
                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">
@@ -154,10 +136,8 @@ console.log(products)
                     }
                 </div>
                 </div>
-    
-     </div>
-      
 
+     </div>
         </div>
     );
 };

@@ -90,6 +90,7 @@ export const {
 export const selectCount = (state: RootState) => state.products.value;
 export const selectProducts = (state: RootState) => state.products;
 export const selectSearchQuery = (state: RootState) => state.products.searchQuery;
+console.log(selectSearchQuery)
 export const singleProductFormState = (state: RootState) => state.products.singleProduct;
 export const selectfilters = (state: RootState) => state.products;
 
