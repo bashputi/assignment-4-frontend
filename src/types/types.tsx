@@ -34,7 +34,6 @@ export interface TProductProps {
     brand: string;
     price: number;
     category: string;
-    stock: number;
     rating: number;
     update?: string;
 };
@@ -58,7 +57,7 @@ export interface TFormInput {
     brand: string;
     price: number;
     category: string;
-    stock: number;
+    quantity: number;
     rating: number;
 };
 

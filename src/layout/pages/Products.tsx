@@ -93,7 +93,7 @@ const Products = () => {
                             <div className="relative">
                                 <a href="#">
                                 <img
-                                    className="w-full"
+                                    className="w-full h-56"
                                     src= {product?.image}
                                     alt="Sunset in the mountains"
                                 />
@@ -113,7 +113,7 @@ const Products = () => {
                                 {product?.title}
                                 </a>
                                 <p className="text-gray-500 text-sm">
-                                {product?.description}
+                                {product?.description?.length > 100 ? product.description.slice(0, 100) + " ... ... ..." : product.description}
                                 </p>
                             </div>
                             <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">

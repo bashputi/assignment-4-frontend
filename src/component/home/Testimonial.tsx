@@ -128,15 +128,14 @@ const Testimonial = () => {
         className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center max-h-150 relative   transform duration-500   group"
         style={{
           backgroundImage:
-            'url("https://i.pinimg.com/564x/34/65/b8/3465b890b11571e2c876ae74dc1b3139.jpg")'
+            'url("https://www.thehikinglife.com/the-hiking-life-2/wp-content/uploads/2010/09/Cape-to-Cape-Walk.jpg")'
         }}
       >
         <div className=" relative h-full  group-hover:bg-opacity-0 max-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
           <div className=" group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
             <p className="opacity-0 text-white text-sm 2xl:text-lg group-hover:opacity-80 transform duration-500 ">
-              {" "}
               Engage with a platform where interaction is intuitive, ensuring
-              your journey is fluid and responsive. Description two.{" "}
+              your journey is fluid and responsive. Description two.
             </p>
           </div>
         </div>
@@ -147,15 +146,14 @@ const Testimonial = () => {
         className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center max-h-150 relative   transform duration-500   group"
         style={{
           backgroundImage:
-            'url("https://i.pinimg.com/564x/33/d6/54/33d654e8058fdf69e160dcbd2235cdac.jpg")'
+            'url("https://i.natgeofe.com/n/84b65902-fec3-4fb0-91fa-e16df38a9b8c/NationalGeographic_2692996_3x4.jpg")'
         }}
       >
         <div className=" relative h-full  group-hover:bg-opacity-0 max-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
           <div className=" group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
             <p className="opacity-0 text-white text-sm 2xl:text-lg group-hover:opacity-80 transform duration-500 ">
-              {" "}
               Discover our commitment to thoughtful design, prioritizing
-              accessibility and user satisfaction. Description three.{" "}
+              accessibility and user satisfaction. Description three.
             </p>
           </div>
         </div>
@@ -166,16 +164,15 @@ const Testimonial = () => {
         className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center max-h-150 relative   transform duration-500   group"
         style={{
           backgroundImage:
-            'url("https://i.pinimg.com/564x/39/b8/01/39b801afe355e623bcb3928b1c1b046d.jpg")'
+            'url("https://images.pexels.com/photos/1576939/pexels-photo-1576939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")'
         }}
       >
         <div className=" relative h-full  group-hover:bg-opacity-0 max-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
           <div className=" group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
             <p className="opacity-0 text-white text-sm 2xl:text-lg group-hover:opacity-80 transform duration-500 ">
-              {" "}
               Experience innovation at every step, with forward-thinking
               solutions designed to enhance your daily interactions. Description
-              four.{" "}
+              four.
             </p>
           </div>
         </div>
@@ -186,15 +183,14 @@ const Testimonial = () => {
         className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center max-h-150 relative   transform duration-500   group"
         style={{
           backgroundImage:
-            'url("https://i.pinimg.com/564x/2b/b5/48/2bb548dbf4a4c57381a7b7f736b4930b.jpg")'
+            'url("https://images.squarespace-cdn.com/content/v1/5a68e7559f8dce77b96f0432/1610415535355-C5MC9CIPVMGQ4VY97UVU/IMG_0136.jpeg")'
         }}
       >
         <div className=" relative h-full  group-hover:bg-opacity-0 max-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
           <div className=" group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
             <p className="opacity-0 text-white text-sm 2xl:text-lg group-hover:opacity-80 transform duration-500 ">
-              {" "}
               Join us in embracing sustainability, where design and
-              functionality meet eco-conscious decisions. Description five.{" "}
+              functionality meet eco-conscious decisions. Description five.
             </p>
           </div>
         </div>

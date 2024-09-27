@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div className="bg-[#84869B]  container mx-auto text-white">
+        <div className="bg-gray-700  container mx-auto text-white">
            <footer className="w-full">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     {/*Grid*/}
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       {/*End Col*/}
       <div className="lg:mx-auto text-left ">
-        <h4 className="text-lg text-gray-900 font-medium mb-7">Pages</h4>
+        <h4 className="text-lg text-black font-medium mb-7">Pages</h4>
         <ul className="text-sm  transition-all duration-500">
           <li className="mb-6">
             <Link
@@ -52,47 +52,44 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              to="/wishlist"
+              to="/carts"
               className="  hover:text-black"
             >
-              Wishlist
+              Carts
             </Link>
           </li>
         </ul>
       </div>
       {/*End Col*/}
       <div className="lg:mx-auto text-left ">
-        <h4 className="text-lg text-gray-900 font-medium mb-7">Products</h4>
+        <h4 className="text-lg text-black font-medium mb-7">Products</h4>
         <ul className="text-sm  transition-all duration-500">
           <li className="mb-6">
-            <Link
-              to="javascript:;"
+            <p
               className=" hover:text-black"
             >
               Figma UI System
-            </Link>
+            </p>
           </li>
           <li className="mb-6">
-            <Link
-              to="javascript:;"
+            <p
               className="  hover:text-black"
             >
               Icons Assets
-            </Link>
+            </p>
           </li>
           <li>
-            <Link
-              to="javascript:;"
+            <p
               className="  hover:text-black"
             >
               Responsive Blocks
-            </Link>
+            </p>
           </li>
         </ul>
       </div>
       {/*End Col*/}
       <div className="lg:mx-auto text-left ">
-        <h4 className="text-lg text-gray-900 font-medium mb-7">Support</h4>
+        <h4 className="text-lg text-black font-medium mb-7">Support</h4>
         <ul className="text-sm  transition-all duration-500">
           <li className="mb-6">
             <p
@@ -120,7 +117,7 @@ const Footer = () => {
       </div>
       {/*End Col*/}
       <div className="lg:mx-auto text-left ">
-        <h4 className="text-lg text-gray-900 font-medium mb-7">Subscribe</h4>
+        <h4 className="text-lg text-black font-medium mb-7">Subscribe</h4>
         <p className="text-sm  leading-6 mb-7">
           Subscribe to get the latest news from us
         </p>

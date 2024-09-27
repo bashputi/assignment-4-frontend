@@ -3,8 +3,6 @@
 const Other = () => {
   return (
     <div className="">
-     
-   
       <div className="max-w-7xl mx-auto py-6 px-6  lg:px-12 lg:py-28">
     <div className="flex flex-col lg:flex-row">
       <div
@@ -34,35 +32,35 @@ const Other = () => {
         <div className="h-64 col-span-4 sm:col-span-4 relative">
           <img
             className="rounded-md"
-            src="https://images.unsplash.com/photo-1573426667638-18ccdd988a39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-            alt="fresh beets"
+            src="https://www.campingwithstyle.co.uk/wp-content/uploads/2024/02/luxury-camping-worlds-most-expensive-camping-gear-700x700.png"
+            alt="Camping tents"
           />
         </div>
         <div className="h-64 col-span-4 sm:col-span-2 relative">
           <img
             className="rounded-lg"
-            src="https://images.unsplash.com/photo-1592201426550-83c4be24a0a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
-            alt="red veggies"
+            src="https://png.pngtree.com/thumb_back/fh260/background/20230902/pngtree-the-stars-are-visible-at-night-at-a-camp-tent-image_13124753.jpg"
+            alt="camping lantern"
           />
         </div>
         <div className="h-64 col-span-4 sm:col-span-2 relative">
           <img
             className="rounded-sm"
-            src="https://images.unsplash.com/photo-1595855759920-86582396756a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+            src="https://sp.apolloboxassets.com/vendor/product/productImages/2022-05-30/Fpr26Array_15.jpg"
             alt="asperagas"
           />
         </div>
         <div className="h-64 col-span-4 sm:col-span-3 relative">
           <img
             className="rounded-md"
-            src="https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="carrots"
+            src="https://truckvault.com/sites/default/files/styles/max_1300x1300/public/inline-images/psNUC6BUGo4o7pfRDgqPMz3d3ZVDqG0Wh1Xn9XSTTNXRF77X2t.jpg?itok=k1cKjp9P"
+            alt="camping track"
           />
         </div>
         <div className="h-64 col-span-4 sm:col-span-1 relative">
           <img
             className="rounded-md"
-            src="https://images.unsplash.com/photo-1558818498-28c1e002b655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+            src="https://s3.us-east-1.amazonaws.com/images.gearjunkie.com/uploads/2024/07/AirCore-Hood.jpg"
             alt="tomato tomato"
           />
         </div>

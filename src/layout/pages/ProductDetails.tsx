@@ -41,9 +41,7 @@ const ProductDetails = () => {
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
           {product?.title}
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-        {product?.description}
-        </p>
+       
         <div className="flex mb-4">
           <div className="mr-4">
             <span className="font-bold text-gray-700 dark:text-gray-300">
@@ -55,7 +53,7 @@ const ProductDetails = () => {
             <span className="font-bold text-gray-700 dark:text-gray-300">
               Availability:
             </span>
-            <span className="text-gray-600 dark:text-gray-300">{product?.stock}</span>
+            <span className="text-gray-600 dark:text-gray-300"> {product?.quantity} pics</span>
           </div>
         </div>
         <div className="mb-4">
@@ -75,8 +73,6 @@ const ProductDetails = () => {
             Product Description:
           </span>
           <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">
-         {product?.description}
-         {product?.description}
          {product?.description}
           </p>
         </div>

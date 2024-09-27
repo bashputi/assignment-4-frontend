@@ -13,7 +13,7 @@ const toggleMenu = () => {
 return (
 <div className="">
   <div className="container mx-auto">
-    <nav className="bg-[#84869B] py-2.5 rounded-sm shadow-xl top-0 ">
+    <nav className="bg-[#003856] py-2.5 rounded-sm shadow-xl top-0 ">
       <div className="flex flex-wrap items-center justify-between px-4 mx-auto">
         <Link to="/" className="flex items-center">
           <img

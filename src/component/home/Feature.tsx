@@ -95,8 +95,8 @@ if (isLoading) return (<div className="flex justify-center" aria-label="Loading.
     {/* card  */}
     {
        products?.map((product:  TProductProps) => (
-        <div key={product._id} className="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
-      <img
+        <div key={product._id} className="p-5 py-10 bg-blue-100 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
+      <img className="w-full h-56"
         src={product.image}
         alt=""
       />
