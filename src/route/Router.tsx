@@ -10,6 +10,7 @@ import ProductManage from "../layout/pages/ProductManage.tsx";
 import CreateProduct from "../layout/pages/CreateProduct.tsx";
 import EditProduct from "../layout/pages/EditProduct.tsx";
 import Checkout from "../component/cart/Checkout.tsx";
+import Success from "../component/cart/Success.tsx";
 
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         {
           path: "/checkout",
           element: <Checkout />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
         },
       
       ]
