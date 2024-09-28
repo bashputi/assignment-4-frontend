@@ -5,7 +5,7 @@ import { TProductProps } from "../../types/types";
 import { useState } from "react";
 import { useAppDispatch } from "../../Redux/hooks";
 import Swal from 'sweetalert2'
-import { removeFromCart } from "../../Redux/features/CartSlice";
+import { addToCart, removeFromCart } from "../../Redux/features/CartSlice";
 
 
 interface SingleCardProps {
@@ -36,7 +36,19 @@ const SingleCart = ({ product }: SingleCardProps) => {
         });
       }
     });
-  }
+  };
+
+  const handleAddToCart = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your Product has been Updated ",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    dispatch(addToCart({ product, quantity }));
+    setUpdateCard(true);
+  };
 
     return (
         <div className="md:flex items-strech py-8 md:py-10 lg:py-8 border-t border-gray-50">
@@ -66,11 +78,11 @@ const SingleCart = ({ product }: SingleCardProps) => {
           <div className="flex items-center justify-between pt-5">
             <div className="flex itemms-center">
             {
-     quantity === 0 ? (
+     quantity === 1 ? (
        <p className="bg-white rounded-l border text-gray-100 px-2 py-1">
         <FaMinus/>
         </p>) : (
-       <button onClick={() => setQuantity(quantity - 1 )} className="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
+       <button onClick={() => setQuantity(quantity - 1)} className="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
         <FaMinus/>
         </button>)
     }
@@ -90,7 +102,13 @@ const SingleCart = ({ product }: SingleCardProps) => {
     }
             </div>
             <div>
-    <button className="bg-green-600 px-2 font-semibold hover:bg-green-500 py-2 text-sm text-white ">Update Item</button>
+    {
+      updateCard ? (
+        <button className="bg-blue-700 px-2 font-semibold hover:bg-blue-500 py-2 text-sm text-white ">Updated</button>
+      ) : (
+        <button onClick={handleAddToCart} className="bg-green-600 px-2 font-semibold hover:bg-green-500 py-2 text-sm text-white ">Update Item</button>
+      )
+    }
   </div>
           </div>
         </div>

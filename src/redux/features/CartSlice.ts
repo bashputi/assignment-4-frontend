@@ -18,7 +18,7 @@ const cartSlice = createSlice({
             const existingItem = state.items.find((item) => item._id === product._id);
 
             if (existingItem) {
-                existingItem.selectedQuantity += quantity;
+                existingItem.selectedQuantity = quantity;
             }else{
                 state.items.push({
                     ...product,
@@ -41,5 +41,5 @@ export default cartSlice.reducer;
 
 
 export const cartProduct = (state: RootState) => state.cart.items;
-export const selectTotalQuantity = (state: RootState) => state.cart.items.reduce((total, item) => total + item.quantity, 0);
-export const selectTotalPrice = (state: RootState) => state.cart.items.reduce((total, item) => total + item.price * item.quantity, 0);
+export const selectTotalQuantity = (state: RootState) => state.cart.items.reduce((total, item) => total + item.selectedQuantity, 0);
+export const selectTotalPrice = (state: RootState) => state.cart.items.reduce((total, item) => total + item.price * item.selectedQuantity, 0);

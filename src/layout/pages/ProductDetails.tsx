@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getSingleProduct, singleProductFormState } from "../../Redux/features/ProductSlice";
 import { useAppDispatch, useAppSelector } from "../../Redux/hooks";
 import { TProductProps } from "../../types/types";
@@ -14,10 +14,14 @@ import { FaMinus } from "react-icons/fa";
 const ProductDetails = () => {
   const dispatch = useAppDispatch();
   const { id } = useParams();
-
-  dispatch(getSingleProduct(id as string));
+useEffect(() => {
+  if(id) {
+    dispatch(getSingleProduct(id as string));
+  }
+}, [dispatch, id])
+  
   const [cardBtn, setCartBtn] = useState(false);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   const product = useAppSelector(singleProductFormState) as TProductProps;
 
@@ -57,7 +61,7 @@ const ProductDetails = () => {
           <div className="inline-flex items-center mt-2">
 
       {
-        count === 0 ? (
+        count === 1 ? (
          <p className="bg-white rounded-l border text-gray-100 px-2 py-1">
           <FaMinus/>
           </p>) : (
@@ -69,7 +73,7 @@ const ProductDetails = () => {
       {count}
     </div>
       {
-        product.quantity === count ? (
+        product?.quantity === count ? (
           <p className="bg-white rounded-r border text-gray-100  px-2 py-1">
           <FaPlus />
           </p>
@@ -110,7 +114,7 @@ const ProductDetails = () => {
          
             { totalQuantity === 0 ? (
               <h1><span className="font-bold text-gray-700">Available Quantity:</span> <span className="font-bold text-red-500">Out of Stock</span></h1>
-            ) : ( <h1><span className="font-bold text-gray-700">Available Quantity:</span> <span>{totalQuantity} pics</span></h1> )} 
+            ) : ( <h1><span className="font-bold text-gray-700">Available Quantity:</span> <span>{totalQuantity + 1} pics</span></h1> )} 
            
           </div>
         </div>
