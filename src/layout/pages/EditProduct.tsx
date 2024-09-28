@@ -2,35 +2,24 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from '../../Redux/hooks';
-import { useEffect } from 'react';
+
 import { getSingleProduct, singleProductFormState, updateProductIntoState } from '../../Redux/features/ProductSlice';
 import { useParams } from 'react-router-dom';
-import { TProductProps } from '../../types/types';
+import { TFormInput, TProductProps } from '../../types/types';
 
-type TFormInput = {
-    title: string;
-    image: string;
-    price: number;
-    category: string;
-    brand: string;
-    stock: number;
-    rating: number;
-    description: string;
-};
 
 const EditProduct = () => {
     const { id } = useParams();
     const dispatch = useAppDispatch();
 
-    useEffect(() => {
-        dispatch(getSingleProduct(id)
-    )
-    }, [dispatch, id]);
+  
+        dispatch(getSingleProduct(id as string))
+  
 
     const product = useAppSelector(singleProductFormState) as TProductProps;
 
 
-    const { register, handleSubmit, reset } = useForm<TFormInput>();
+    const { register, handleSubmit } = useForm<TFormInput>();
     const onSubmit: SubmitHandler<TFormInput>  = async(data) => {
     
         dispatch(updateProductIntoState({...product, ...data}));
@@ -135,15 +124,15 @@ Edit Product
 
 <div className="mb-4">
   <label className="block text-gray-700 font-bold mb-2" htmlFor="service">
-    Stock
+  Quantity
   </label>
   <input
     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-    id="stock"
+    id="quantity"
     type="number"
     min="0"
-    defaultValue={product?.stock}
-    {...register("stock")}
+    defaultValue={product?.quantity}
+    {...register("quantity")}
   
   />
 </div>

@@ -26,7 +26,7 @@ export interface CartItem extends ProductsState {
 
 export interface TProductProps {
     quantity: number;
-    avaiableQuantity: number;
+    selectedQuantity: number;
     _id: string;
     image: string;
     title: string;
@@ -44,7 +44,7 @@ export interface AddToCartPayload {
 }
 
 export interface TCartItem extends TProductProps {
-    quantity: number;
+    selectedQuantity: number;
 }
 
 export interface TCard {
