@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/home/Navbar";
 import Footer from "../component/home/Footer";
+import usePageRefresh from "../component/UsePageRefresh";
 
 
 
 const MainLayOut = () => {
+    usePageRefresh();
     return (
         <div className=" flex flex-col min-h-[100vh]">
          <div className="flex-grow">

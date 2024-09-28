@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addToCart } from "../../Redux/features/CartSlice";
 import { FaMinus } from "react-icons/fa";
-
+import ReactImageMagnify from 'react-image-magnify';
 
 
 const ProductDetails = () => {
@@ -49,12 +49,25 @@ useEffect(() => {
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col md:flex-row -mx-4">
       <div className="md:flex-1 px-4">
-        <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-          <img
-            className="w-full h-full object-cover"
-            src={product?.image}
-            alt="Product Image"
-          />
+        <div className="rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
+        <ReactImageMagnify 
+         {
+          ...{
+            smallImage: {
+              alt: 'Image description',
+              isFluidWidth: true,
+              src: product?.image,
+            },
+            largeImage: {
+              src: product?.image,
+              width: 800,
+              height: 800,
+            },
+            enlargedImagePosition: 'over',
+            enlargedImageContainerStyle: { ZIndex: '150'},
+          }
+         }
+        />
         </div>
         <div className=" -mx-2 mb-4">
           <div className="flex gap-5 px-2">
