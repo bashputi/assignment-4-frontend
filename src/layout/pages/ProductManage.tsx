@@ -90,7 +90,8 @@ const ProductManage = () => {
   <tbody className="bg-white divide-y divide-gray-200">
       {
       currentPage?.map((product: TProductProps) => (
-  <tr key={product._id}>
+  <tr data-aos="fade-right" data-aos-duration="3000"
+   key={product._id}>
           <td className="px-6 py-4 whitespace-nowrap">
             <img src={product?.image} alt="image"  className="w-8 h-8 md:w-12 md:h-12 bg-gray-800 rounded-full"/>
           </td>

@@ -6,10 +6,11 @@ const Testimonial = () => {
 
 
             {/* section 1  */}
-            <div>
+            <div  data-aos="fade-right"
+     data-aos-duration="2500" >
             <div className=" w-full px-4 pb-16" id="faq">
             <h2 className="text-4xl font-bold text-center">Happy Customers</h2>
-            <p className="pt-6 pb-8 text-base max-w-2xl text-center m-auto">
+            <p className="pt-6 pb-8 text-white max-w-2xl text-center m-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit nam maxime quas
                 fugiat tempore blanditiis, eveniet quia accusantium.
             </p>
@@ -61,8 +62,8 @@ const Testimonial = () => {
             </div>
 
            
-            <div className="">
-  <div className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
+            <div >
+  <div  className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
     <h2 className="text-3xl leading-9 font-extrabold text-gray-900 text-center">
       Frequently asked questions
     </h2>

@@ -17,7 +17,7 @@ const Products = () => {
         dispatch(setSearchQuery(event.target.value));
       };
 
-      const handleSortChange = (event: ChangeEvent<HTMLInputElement>) => {
+      const handleSortChange = (event: any ) => {
        const value = event.target.value;
         if (value === "low") {
             dispatch(setSort("low-to-high"));
@@ -88,7 +88,7 @@ const Products = () => {
                     {/* CARD */}
                     {
                         searchProduct?.map((product: TProductProps) => (
-                            <div key={product?._id} className="rounded bg-white overflow-hidden shadow-lg flex flex-col">
+                            <div data-aos="fade-up-right" data-aos-duration="2000"  key={product?._id} className="rounded bg-white overflow-hidden shadow-lg flex flex-col">
                             <a href="#" />
                             <div className="relative">
                                 <a href="#">

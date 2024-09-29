@@ -48,9 +48,9 @@ useEffect(() => {
             <div className="bg-gray-100 dark:bg-gray-800 py-8">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col md:flex-row -mx-4">
-      <div className="md:flex-1 px-4">
+      <div data-aos="fade-right" data-aos-duration="3000"className="md:flex-1 px-4">
         <div className="rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-        <ReactImageMagnify 
+        <ReactImageMagnify
          {
           ...{
             smallImage: {
@@ -64,7 +64,7 @@ useEffect(() => {
               height: 800,
             },
             enlargedImagePosition: 'over',
-            enlargedImageContainerStyle: { ZIndex: '150'},
+            enlargedImageContainerStyle: { zIndex: '150'},
           }
          }
         />
@@ -111,7 +111,7 @@ useEffect(() => {
 
         </div>
       </div>
-      <div className="md:flex-1 px-4">
+      <div data-aos="fade-left" data-aos-duration="3000" className="md:flex-1 px-4">
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
           {product?.title}
         </h2>

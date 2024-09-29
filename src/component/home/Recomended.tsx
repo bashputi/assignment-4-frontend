@@ -113,7 +113,10 @@ useEffect(() => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
          {
           products?.map((item:  TProductProps) => (
-                <div key={item?._id}>
+                <div  data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0" key={item?._id}>
                              {/* CARD */}
                 <div  className="rounded bg-white overflow-hidden shadow-lg flex flex-col">
                   

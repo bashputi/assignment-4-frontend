@@ -1,5 +1,4 @@
 
-import Banner from "../../component/home/Banner";
 import Category from "../../component/home/Category";
 import Feature from "../../component/home/Feature";
 import Recomended from "../../component/home/Recomended";
@@ -9,6 +8,7 @@ import BannerTwo from "../../component/home/BannerTwo";
 
 
 export default function Home() {
+  
   return (
     <div className="mx-auto container">
     <BannerTwo /> 

@@ -8,7 +8,7 @@ const Category = () => {
             <h1 className=" text-xl md:text-3xl font-bold text-center mt-[10vh]">Shop By Category</h1>
             <div className="mt-8 md:mt-12 lg:mt-16">
             <section className="">
-            <div className="py-4 px-2 mx-auto max-w-screen-2xl sm:py-4 lg:px-6">
+            <div data-aos="zoom-out" data-aos-duration="2500"  className="py-4 px-2 mx-auto max-w-screen-2xl sm:py-4 lg:px-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
                 <div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
                     <div

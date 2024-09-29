@@ -1,11 +1,17 @@
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
     return (
         <div>
             {/* section 1  */}
             <section className="">
-  <div
+  <div data-aos="fade-down"
+data-aos-duration="2000"
     id="map"
     className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat"
   >
@@ -17,7 +23,8 @@ const About = () => {
       loading="lazy"
     />
   </div>
-  <div className="container px-6 md:px-12">
+  <div data-aos="fade-up"
+     data-aos-duration="3000" className="container px-6 md:px-12">
     <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
       <div className="flex flex-wrap">
         <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
@@ -191,7 +198,8 @@ const About = () => {
 </section>
 
         {/* section 2 */}
-  <section className="text-center py-10 md:py-20 px-4">
+  <div data-aos="fade-right"
+data-aos-duration="2000" className="text-center py-10 md:py-20 px-4">
     <h2 className="text-2xl md:text-4xl font-bold">Mission And Values</h2>
     <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
       Our mission is to provide exceptional healthcare services with a focus on
@@ -207,11 +215,12 @@ const About = () => {
         <p className="text-gray-700">Years of Experience</p>
       </div>
     </div>
-  </section>
+  </div>
  
 
         {/* section 3  */}
-        <div className="bg-gray-100">
+        <div data-aos="fade-left"
+data-aos-duration="2000" className="bg-gray-100">
   <div className="py-10 max-w-screen-xl mx-auto">
     <div className="text-center mb-16">
      

@@ -1,13 +1,19 @@
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BannerTwo = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
     return (
-        <div className="bg-gray-50">
-        <div className="container mx-auto px-4 py-4">
+        <div  className="bg-gray-50">
+        <div  className="container mx-auto px-4 py-4">
          
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Large item */}
-            <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-right" data-aos-duration="2000"  className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://images.ctfassets.net/7mmwp5vb96tc/113343/9155b6ae5fce3bf21e7212fd67ad5879/senja-norway-hgr-146868_1920-photo_shutterstock.jpg?q=75&w=3840&fm=webp"
                 alt="Nature"
@@ -23,7 +29,7 @@ const BannerTwo = () => {
               </div>
             </div>
             {/* Two small items */}
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-left" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://plus.unsplash.com/premium_photo-1676140636629-42d644a91125?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9uZmlyZXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Bonfire"
@@ -35,7 +41,7 @@ const BannerTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-right" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://www.exploresquamish.com/site/assets/files/14819/scott-goodwill-359336-unsplash.2400x1364.webp"
                 alt="camping"
@@ -48,7 +54,7 @@ const BannerTwo = () => {
               </div>
             </div>
             {/* Three medium items */}
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-left" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://www.safesplash.com/hubfs/camping%20kids.jpg"
                 alt="quallity time"
@@ -75,7 +81,7 @@ const BannerTwo = () => {
               </div>
             </div>
             {/* bottom cards */}
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-up" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://thebestcamps.com/camp-admin/camp-images/594-large.jpg?1726329095.0381"
                 alt="Sport"
@@ -87,7 +93,7 @@ const BannerTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-up" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1TOix8jSxkbw02kpwvgNFpXzF63-b8hGMYWfBcaLi3fUnGeG6nNWeB02Z2GDdusp5Oyo&usqp=CAU"
                 alt="Sport"
@@ -99,7 +105,7 @@ const BannerTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-up" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mxMVFCFb3cjd2mmoqLPnXeK1gOBG6PO6zA&s"
                 alt="Sport"
@@ -111,7 +117,7 @@ const BannerTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div data-aos="fade-up" data-aos-duration="2000"  className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src="https://www.ryanmoodyfishing.com/wp-content/uploads/2024/04/Ryan_Fishlift_Barra_PortClinton_Trolling_DeepDiver-6.jpg"
                 alt="Sport"
