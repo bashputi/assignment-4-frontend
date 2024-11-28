@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/home/Navbar";
 import Footer from "../component/home/Footer";
-import usePageRefresh from "../component/UsePageRefresh";
+import usePageRefresh from "../hook/UsePageRefresh";
 
 
 

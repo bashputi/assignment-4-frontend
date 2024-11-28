@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { cartProduct } from "../Redux/features/CartSlice";
-import { useAppSelector } from "../Redux/hooks";
+import { useAppSelector } from "../redux/hooks";
+
 
 
 const usePageRefresh = () => {

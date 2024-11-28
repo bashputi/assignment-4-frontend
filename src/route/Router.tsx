@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayOut from '../layout/MainLayOut.tsx'
-import NotFound from '../layout/NotFound.tsx'
-import Home from '../layout/home/Home.tsx'
-import About from "../layout/pages/About.tsx";
-import Products from "../layout/pages/Products.tsx";
-import ProductDetails from "../layout/pages/ProductDetails.tsx";
-import Carts from "../layout/pages/Carts.tsx";
-import ProductManage from "../layout/pages/ProductManage.tsx";
-import CreateProduct from "../layout/pages/CreateProduct.tsx";
-import EditProduct from "../layout/pages/EditProduct.tsx";
+import NotFound from '../pages/notFound/NotFound.tsx'
 import Checkout from "../component/cart/Checkout.tsx";
 import Success from "../component/cart/Success.tsx";
+import Home from "../pages/home/Home.tsx";
+import About from "../pages/about/About.tsx";
+import Products from "../pages/product/Products.tsx";
+import CreateProduct from "../pages/product/CreateProduct.tsx";
+import EditProduct from "../pages/product/EditProduct.tsx";
+import Carts from "../pages/cart/Carts.tsx";
+import ProductDetails from "../pages/product/ProductDetails.tsx";
+import ProductManage from "../pages/product/ProductManage.tsx";
 
 
 const router = createBrowserRouter([

@@ -73,7 +73,7 @@ return (
             <li>
               <NavLink
                 to="/"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-yellow-600" : "text-[white]" }
                 aria-current="page"
               >
                 Home
@@ -82,7 +82,7 @@ return (
             <li>
               <NavLink
                 to="/about"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-yellow-600" : "text-[white]" }
                 aria-current="page"
               >
                 About US
@@ -91,7 +91,7 @@ return (
             <li>
               <NavLink
                 to="/products"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-yellow-600" : "text-[white]" }
                 aria-current="page"
               >
                 All Products
@@ -100,7 +100,7 @@ return (
             <li>
               <NavLink
                 to="/product_manage"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-yellow-600" : "text-[white]" }
                 aria-current="page"
               >
                 Manage Product
@@ -109,7 +109,7 @@ return (
             <li className="mt-1 mb-2 md:mb-0">
               <NavLink
                 to="/carts"
-                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[white]" : "" }
+                className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-yellow-600" : "text-[white]" }
                 aria-current="page"
               >
                 <FaShoppingCart />
